@@ -93,7 +93,12 @@ nav {
     flex-direction: column;
 }
 
-.about-me__info-container {
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info--container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,4 +130,17 @@ nav {
 .about-me__info--para {
     font-size: 20px;
     margin-bottom: 28px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
