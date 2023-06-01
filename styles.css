@@ -21,6 +21,10 @@ p {
     font-size: 16px;
 }
 
+a {
+    text-decoration: none;
+}
+
 li {
     list-style: none;
 }
@@ -74,7 +78,6 @@ nav {
 .nav__link--anchor {
     margin: 0 12px;
     color: #242424;
-    text-decoration: none;
     font-weight: 700;
 }
 
@@ -147,7 +150,6 @@ nav {
 .about-me__link {
     font-size: 20px;
     color: #242424;
-    text-decoration: none;
     padding: 0 16px;
 }
 
@@ -280,7 +282,6 @@ nav {
 .project__description--link {
     font-size: 20px;
     margin-right: 16px;
-    text-decoration: none;
 }
 
 .project__description--title,
@@ -288,5 +289,41 @@ nav {
 .project__description--para,
 .project__description--link {
     text-align: left;
+    color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #242424;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+}
+
+.footer__social--list {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__row {
+    padding: 8% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo--img {
+    width: 70px;
+    height: 70px;
+}
+
+.footer__social--link,
+.footer__copywhite {
     color: #fff;
 }
