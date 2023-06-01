@@ -72,6 +72,7 @@ li {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 12px;
 }
 
 .text--purple {
@@ -220,6 +221,7 @@ nav {
 
 .language__list {
     display: flex;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -371,4 +373,65 @@ footer {
 .footer__anchor:hover .footer__logo--popper {
     transform: translateX(60px);
     opacity: 1;
+}
+
+/* Small phones, Tablets, Large smartphones */
+@media (max-width: 768px) {
+    nav {
+        height: 68px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+    .about-me__info--para {
+        font-size: 18px;
+    }
+
+    .language {
+        width: calc(100% / 2);
+    }
+
+    .project__description--para {
+        font-size: 14px;
+    }
+
+    .project__description {
+        left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* Small phones, Small tablets */
+@media (max-width: 480px) {
+    .nav__link:not(:last-child) {
+        display: none;
+    }
+
+    .project__description {
+        padding: 0;
+        left: 0;
+        width: 100%;
+
+    }
+
+    .project__description--para {
+        display: none;
+    }
+
+    .project__description--link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__description--title {
+        font-size: 32px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .project__description--sub-title {
+        text-align: center;
+        margin: 12px 0;
+    }
 }
